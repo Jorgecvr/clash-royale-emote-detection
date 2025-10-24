@@ -1,4 +1,0 @@
-py -3.10 -m venv venv
-venv\Scripts\Activate.ps1
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-pip install mediapipe opencv-python scikit-learn joblib numpy pillow
