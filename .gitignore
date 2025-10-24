@@ -1,9 +1,21 @@
-# Ambiente virtual
+# Python venv
 venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
 # Configurações locais
 *.log
 .DS_Store
 .env
+
+# Modelos e dados grandes
+*.joblib
+*.npy
+*.npz
+
+# IDEs
+.vscode/
+.idea/
+
