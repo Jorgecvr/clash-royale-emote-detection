@@ -27,16 +27,12 @@ def load_data():
 def main():
     X, y, labels = load_data()
     print("Loaded:", X.shape, "labels:", np.unique(y))
-    # shuffle & split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=42, stratify=y)
-    # Option 1: SVM
     clf = SVC(kernel="rbf", probability=True, class_weight="balanced", random_state=42)
-    # Optionally run GridSearch (slower). We'll do a simple fit to speed things up.
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
     print("Classification report:")
     print(classification_report(y_test, y_pred))
-    # save model and label order
     joblib.dump({"model": clf, "labels": labels}, os.path.join(MODEL_DIR, "face_expr_model.joblib"))
     print("Model saved to models/face_expr_model.joblib")
 
