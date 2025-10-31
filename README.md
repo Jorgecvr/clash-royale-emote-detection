@@ -31,7 +31,7 @@ playsound
 
 ---
 
-## ⚙️ Configurando o ambiente
+## Configurando o ambiente
 
 1. **Abra o terminal** no diretório do projeto
 
@@ -91,7 +91,7 @@ python trainModel.py
 - Mostra o **relatório de classificação** com métricas de acurácia
 - Salva o modelo treinado como `models/face_expr_model.joblib`
 
-### 🎮 Passo 3: Reconhecimento em Tempo Real
+### Passo 3: Reconhecimento em Tempo Real
 
 Com o modelo treinado, execute o reconhecimento:
 
